@@ -1,5 +1,6 @@
 import React, { useState, useRef } from "react";
 import { motion, useMotionValue, useSpring, useTransform } from "motion/react";
+import coverImage from "../assets/images/Artificial_Intelligence_Clinical_2K_202607021825.jpeg";
 
 export default function BookMockup() {
   const cardRef = useRef<HTMLDivElement>(null);
@@ -201,7 +202,7 @@ export default function BookMockup() {
           >
             {/* Exact front cover flat image */}
             <img
-              src="/src/assets/images/Artificial_Intelligence_Clinical_2K_202607021825.jpeg"
+              src={coverImage}
               alt="Artificial Intelligence in Clinical Practice Book Cover"
               className="w-full h-full object-cover rounded-r-sm"
               referrerPolicy="no-referrer"
