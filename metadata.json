@@ -1,0 +1,6 @@
+{
+  "name": "Artificial Intelligence in Clinical Practice",
+  "description": "A practical guide for physicians to integrate AI into their clinical workflow, save time, and improve diagnoses.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
