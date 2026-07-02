@@ -5,7 +5,7 @@ import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
   return {
-    base: "/ClinicalAieBook/",
+    base: process.env.VERCEL ? "/" : "/ClinicalAieBook/",
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
