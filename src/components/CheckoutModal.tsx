@@ -67,12 +67,9 @@ export default function CheckoutModal({ isOpen, onClose, price, bookTitle }: Che
   };
 
   const handleDownload = () => {
-    const content = `Artificial Intelligence in Clinical Practice: A Practical Guide for Physicians\nAuthor: Dr. Jonathan Reyes, MD\n\nLicense Key: Clinical-AI-${Math.floor(100000 + Math.random() * 900000)}\nLicensed to: ${formData.name} (${formData.email}) - Licensed Clinician\n\nThank you for purchasing! This is a premium simulated download representing your instant access to the book, cheatsheet, and implementation checklist.`;
-    const blob = new Blob([content], { type: "text/plain" });
-    const url = URL.createObjectURL(blob);
     const link = document.createElement("a");
-    link.href = url;
-    link.download = "Clinical_AI_Guide_Dr_Reyes.txt";
+    link.href = `${import.meta.env.BASE_URL}ebook.pdf`;
+    link.download = "Artificial_Intelligence_in_Clinical_Practice.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
